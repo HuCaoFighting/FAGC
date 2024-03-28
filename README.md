@@ -44,7 +44,7 @@ python test_ddd17.py
 
 ## Pre-trained Weights
 
-Our pre-trained weights can be downloaded 
+Our pre-trained weights can be downloaded [dsec]() and [ddd17]()
 
 ## Results COCO mAP@0.50.95 on DSEC 
 
