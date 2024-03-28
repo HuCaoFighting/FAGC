@@ -62,7 +62,7 @@ Our pre-trained weights can be downloaded
 | FAGC               | **0.398**   | **0.144**      | **0.336**            | **0.293**       |
 
 ## Results COCO mAP@0.50 and COCO mAP@0.50.95 on DDD17
-| Method                    | Test(allday) | Test(day) | Test(night) |
+| Method                    | Test(all) mAP@0.50.95 | Test(day) mAP@0.50.95 | Test(night) mAP@0.50.95 | | Test(all) mAP@0.50 | Test(day) mAP@0.50 | Test(night) mAP@0.50 |
 | ------------------------- | ------------ | --------- | ----------- |
 | OnlyRGB                   | 0.427        | 0.433     | 0.406       |
 | OnlyEvent                 | 0.215        | 0.214     | 0.243       |
