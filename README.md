@@ -6,12 +6,12 @@ The official implementation for "Embracing Events and Frames with Hierarchical F
 ![output_evt](https://github.com/HuCaoFighting/FRN/assets/66437581/f8e54dda-c623-4fda-91af-012fe24c22fe)
 
 # Abstract
-This work addresses the major challenges in object detection for autonomous driving, particularly under demanding conditions such as motion blur, adverse weather, and image noise. Recognizing the limitations of traditional camera systems in these scenarios, this work focuses on leveraging the unique attributes of event cameras, such as their low latency and high dynamic range. These attributes offer promising solutions to complement and augment the capabilities of standard RGB cameras. To leverage these benefits, this work introduces a novel RGB-Event network architecture with a unique fusion module. This module effectively utilizes information from both RGB and event modalities, integrating attention mechanisms and AdaIN (Adaptive Instance Normalization) for enhanced performance. The effectiveness of this approach is validated using two datasets: DSEC and PKU-DDD17-Car, with additional image corruption tests to assess robustness. Results demonstrate that the proposed method significantly outperforms existing state-of-the-art RGB-Event fusion alternatives in both datasets and shows remarkable stability under various image corruption scenarios.
+In the field of autonomous vehicles, various heterogeneous sensors, such as LiDAR, Radar, camera, etc, are combined to improve the vehicle ability of sensing accuracy and robustness. Multi-modal perception and learning has been proved to be an effective method to help vehicle understand the nature of complex environments. Event camera is a bio-inspired vision sensor that captures dynamic changes in the scene and filters out redundant information with high temporal resolution and high dynamic range. These characteristics of the event camera make it have a certain application potential in the field of autonomous vehicles. In this paper, we introduce a fully convolutional neural network with feature attention gate component (FAGC) for vehicle detection by combining frame-based and event-based vision. Both grayscale features and event features are fed into the feature attention gate component (FAGC) to generate the pixel-level attention feature coefficients to improve the feature discrimination ability of the network. Moreover, we explore the influence of different fusion strategies on the detection capability of the network. Experimental results demonstrate that our fusion method achieves the best detection accuracy and exceeds the accuracy of the method that only takes single-mode signal as input.
 
 ## Setup
 - Setup python environment
 
-This code has been tested with Python 3.8, Pytorch 2.0.1, and on Ubuntu 20.04
+This code has been tested with Python 3.8, Pytorch 1.12.1, and on Ubuntu 20.04
 
 We recommend you to use Anaconda to create a conda environment:
 
@@ -22,7 +22,7 @@ conda activate env
 - Install pytorch
 
 ```
-conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 pytorch-cuda=11.3 -c pytorch -c nvidia
 ```
 
 ## Usage 
@@ -44,7 +44,7 @@ python test_ddd17.py
 
 ## Pre-trained Weights
 
-Our pre-trained weights can be downloaded [here](https://drive.google.com/file/d/1g_AwWsOJHljpQYIpaeAN8YvYWh0pouaV/view?usp=sharing)
+Our pre-trained weights can be downloaded 
 
 ## Results COCO mAP@0.50.95 on DSEC 
 
@@ -59,9 +59,9 @@ Our pre-trained weights can be downloaded [here](https://drive.google.com/file/d
 | SPNet              | 0.393   | 0.124      | 0.292            | 0.276       |
 | SENet              | 0.379   | 0.121      | 0.254            | 0.251       |
 | CBAM               | 0.405   | 0.134      | 0.305            | 0.281       |
-| Ours               | **0.499**   | **0.258**      | **0.382**            | **0.380**       |
+| FAGC               | **0.398**   | **0.144**      | **0.336**            | **0.293**       |
 
-## Results COCO mAP@0.50.95 on DDD17
+## Results COCO mAP@0.50 and COCO mAP@0.50.95 on DDD17
 | Method                    | Test(allday) | Test(day) | Test(night) |
 | ------------------------- | ------------ | --------- | ----------- |
 | OnlyRGB                   | 0.427        | 0.433     | 0.406       |
@@ -75,7 +75,7 @@ Our pre-trained weights can be downloaded [here](https://drive.google.com/file/d
 | SPNet                 | 0.433        | 0.449     | 0.371       |
 | CBAM                  | 0.428        | 0.442     | 0.38        |
 | SENet                 | 0.424        | 0.437     | 0.370       |
-| Ours                      | **0.460**        | **0.469**     | **0.421**       |
+| FAGC                      | **0.436**        | **0.469**     | **0.421**       |
 
 
 ## Acknowledgements
