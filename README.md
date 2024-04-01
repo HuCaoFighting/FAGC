@@ -1,6 +1,6 @@
-# FRN
+# FAGC
 
-The official implementation for "Embracing Events and Frames with Hierarchical Feature Refinement Network for Robust Object Detection".
+The official implementation for "Fusion-based Feature Attention Gate Component for Vehicle Detection based on Event Camera".
 
 ![output](https://github.com/HuCaoFighting/FRN/assets/66437581/63188281-6f24-4944-869f-029e4ac26bed)
 ![output_evt](https://github.com/HuCaoFighting/FRN/assets/66437581/f8e54dda-c623-4fda-91af-012fe24c22fe)
