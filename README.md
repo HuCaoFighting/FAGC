@@ -26,7 +26,7 @@ conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 pytorch-cud
 ```
 ## Dataset 
 Labelled DSEC Dataset: [dsec](https://github.com/abhishek1411/event-rgb-fusion)
-Download dataset: [PKU-DDD17-CAR](https://github.com/uzh-rpg/DSEC)
+Download dataset: [PKU-DDD17-CAR](https://www.pkuml.org/resources/pku-ddd17-car.html)
 
 ## Usage 
 ### Training with DSEC or PKU-DDD17 Dataset
