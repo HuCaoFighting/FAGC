@@ -24,6 +24,9 @@ conda activate env
 ```
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 pytorch-cuda=11.3 -c pytorch -c nvidia
 ```
+## Dataset 
+Labelled DSEC Dataset: [dsec](https://github.com/abhishek1411/event-rgb-fusion)
+Download dataset: [PKU-DDD17-CAR](https://github.com/uzh-rpg/DSEC)
 
 ## Usage 
 ### Training with DSEC or PKU-DDD17 Dataset
