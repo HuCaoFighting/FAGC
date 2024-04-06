@@ -8,6 +8,21 @@ The official implementation for "Fusion-based Feature Attention Gate Component f
 # Abstract
 In the field of autonomous vehicles, various heterogeneous sensors, such as LiDAR, Radar, camera, etc, are combined to improve the vehicle ability of sensing accuracy and robustness. Multi-modal perception and learning has been proved to be an effective method to help vehicle understand the nature of complex environments. Event camera is a bio-inspired vision sensor that captures dynamic changes in the scene and filters out redundant information with high temporal resolution and high dynamic range. These characteristics of the event camera make it have a certain application potential in the field of autonomous vehicles. In this paper, we introduce a fully convolutional neural network with feature attention gate component (FAGC) for vehicle detection by combining frame-based and event-based vision. Both grayscale features and event features are fed into the feature attention gate component (FAGC) to generate the pixel-level attention feature coefficients to improve the feature discrimination ability of the network. Moreover, we explore the influence of different fusion strategies on the detection capability of the network. Experimental results demonstrate that our fusion method achieves the best detection accuracy and exceeds the accuracy of the method that only takes single-mode signal as input.
 
+If you find it helpful for your research, please cite:
+
+```bibtex
+@ARTICLE{9546775,
+  author={Cao, Hu and Chen, Guang and Xia, Jiahao and Zhuang, Genghang and Knoll, Alois},
+  journal={IEEE Sensors Journal}, 
+  title={Fusion-Based Feature Attention Gate Component for Vehicle Detection Based on Event Camera}, 
+  year={2021},
+  volume={21},
+  number={21},
+  pages={24540-24548},
+  keywords={Cameras;Feature extraction;Logic gates;Sensors;Vehicle detection;Object detection;Detectors;Vehicle detection;multi-modal fusion;feature attention gate component (FAGC);event camera},
+  doi={10.1109/JSEN.2021.3115016}}
+```
+
 ## Setup
 - Setup python environment
 
